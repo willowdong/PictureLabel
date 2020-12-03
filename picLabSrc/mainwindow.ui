@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图片标记工具</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/new/prefix1/icon/label2.svg</normaloff>:/new/prefix1/icon/label2.svg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="MyLabel" name="label">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="open_action"/>
+   <addaction name="separator"/>
+   <addaction name="dir_action"/>
+   <addaction name="separator"/>
+   <addaction name="pre_action"/>
+   <addaction name="separator"/>
+   <addaction name="next_action"/>
+   <addaction name="separator"/>
+   <addaction name="save_action"/>
+   <addaction name="separator"/>
+   <addaction name="load_action"/>
+   <addaction name="separator"/>
+   <addaction name="in_action"/>
+   <addaction name="separator"/>
+   <addaction name="out_action"/>
+   <addaction name="separator"/>
+   <addaction name="reset_action"/>
+   <addaction name="separator"/>
+   <addaction name="actionType"/>
+   <addaction name="separator"/>
+   <addaction name="clear_action"/>
+   <addaction name="separator"/>
+   <addaction name="about_action"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="open_action">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/icon/file.svg</normaloff>:/new/prefix1/icon/file.svg</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开图片</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="save_action">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/icon/save.svg</normaloff>:/new/prefix1/icon/save.svg</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="toolTip">
+    <string>保存标注信息</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="reset_action">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/icon/reset.svg</normaloff>:/new/prefix1/icon/reset.svg</iconset>
+   </property>
+   <property name="text">
+    <string>还原</string>
+   </property>
+   <property name="toolTip">
+    <string>还原图片大小</string>
+   </property>
+  </action>
+  <action name="clear_action">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/icon/clear.svg</normaloff>:/new/prefix1/icon/clear.svg</iconset>
+   </property>
+   <property name="text">
+    <string>清除</string>
+   </property>
+   <property name="toolTip">
+    <string>清除图片标记</string>
+   </property>
+  </action>
+  <action name="in_action">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/icon/zoomin.svg</normaloff>:/new/prefix1/icon/zoomin.svg</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+   <property name="toolTip">
+    <string>放大图片</string>
+   </property>
+  </action>
+  <action name="out_action">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/icon/zoomout.svg</normaloff>:/new/prefix1/icon/zoomout.svg</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+   <property name="toolTip">
+    <string>缩小图片</string>
+   </property>
+  </action>
+  <action name="about_action">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/icon/about.svg</normaloff>:/new/prefix1/icon/about.svg</iconset>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="toolTip">
+    <string>软件信息</string>
+   </property>
+  </action>
+  <action name="dir_action">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/icon/dir.svg</normaloff>:/new/prefix1/icon/dir.svg</iconset>
+   </property>
+   <property name="text">
+    <string>打开文件夹</string>
+   </property>
+   <property name="toolTip">
+    <string>打开文件夹中所有图片</string>
+   </property>
+  </action>
+  <action name="next_action">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/icon/next.svg</normaloff>:/new/prefix1/icon/next.svg</iconset>
+   </property>
+   <property name="text">
+    <string>下一个</string>
+   </property>
+   <property name="toolTip">
+    <string>选择下一张图片</string>
+   </property>
+  </action>
+  <action name="pre_action">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/icon/pre.svg</normaloff>:/new/prefix1/icon/pre.svg</iconset>
+   </property>
+   <property name="text">
+    <string>上一个</string>
+   </property>
+   <property name="toolTip">
+    <string>打开上一张图片</string>
+   </property>
+  </action>
+  <action name="load_action">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/icon/load.svg</normaloff>:/new/prefix1/icon/load.svg</iconset>
+   </property>
+   <property name="text">
+    <string>导入</string>
+   </property>
+   <property name="toolTip">
+    <string>导入已保存的结果</string>
+   </property>
+  </action>
+  <action name="actionType">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/new/prefix1/icon/change.svg</normaloff>:/new/prefix1/icon/change.svg</iconset>
+   </property>
+   <property name="text">
+    <string>切换</string>
+   </property>
+   <property name="toolTip">
+    <string>切换矩形/椭圆</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">mylabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>icon/file.svg</file>
+        <file>icon/dir.svg</file>
+        <file>icon/next.svg</file>
+        <file>icon/pre.svg</file>
+        <file>icon/about.svg</file>
+        <file>icon/zoomout.svg</file>
+        <file>icon/zoomin.svg</file>
+        <file>icon/label2.svg</file>
+        <file>icon/label.svg</file>
+        <file>icon/hand_label.svg</file>
+        <file>icon/clear.svg</file>
+        <file>icon/reset.svg</file>
+        <file>icon/save.svg</file>
+        <file>icon/open.svg</file>
+        <file>icon/load.svg</file>
+        <file>icon/change.svg</file>
+    </qresource>
+</RCC>
